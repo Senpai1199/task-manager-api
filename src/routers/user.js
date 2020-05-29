@@ -56,7 +56,7 @@ router.post("/users", async (req, res) => {
     res.send({ user, token });
     res.status(201).send(user);
   } catch (err) {
-    res.status(400).send(err);
+    res.status(400);
   }
 });
 
